@@ -1,0 +1,329 @@
+/**
+* costum css : modal image
+* costum css : two column
+* costum css : avatar circle
+*/
+
+/*circle avatar*/
+
+div.circle-avatar{
+  
+  
+  width : 100%;
+  height : auto;
+  display: block;
+
+  padding-top : 100%;
+
+  /*make it circle*/
+  border-radius : 50%;
+
+  /*centering image on center*/
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  /* div centered on parent*/
+  margin:0 auto;
+  top : 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+
+/* modal image */
+#myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myImg:hover {opacity: 0.7;}
+    
+    #img-thumbnail {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #img-thumbnail:hover {opacity: 0.7;}
+
+    /* The Modal (background) */
+    .mod {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .mod-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .mod-content, #caption {    
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 45px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* The Download Button */
+    .download {
+        position: absolute;
+        top: 50px;
+        right: 110px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .download:hover,
+    .download:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .mod-content {
+            width: 100%;
+        }
+    }
+
+
+/* two column */
+#left {
+      width: 73%;
+      float: left;
+    }
+    #right {
+      margin-left: 27%;
+      /* Change this to whatever the width of your left column is*/
+    }
+    .clear {
+      clear: both;
+    }
+
+/*
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+*/
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.mod {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(209, 209, 209);
+}
+
+/* Modal Content */
+.mod-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* The Close Button */
+.tutup {
+  color: #5da2fc;
+  position: absolute;
+  top: 45px;
+  right: 35px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.tutup:hover,
+.tutup:focus {
+  color: #5da2fc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Unduh Button */
+.unduh {
+    position: absolute;
+    top: -55px;
+    right: -300px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.unduh:hover,
+.unduh:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.geser {
+  display: none;
+}
+
+.crosshair {
+  cursor: pointer;
+  color: #064392;
+}
+
+/* lanjut & previous buttons */
+.sebelum,
+.lanjut {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  bottom: 42%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "lanjut button" to the right */
+.lanjut {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.sebelum:hover,
+.lanjut:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+/*
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+*/
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
