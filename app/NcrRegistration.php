@@ -18,7 +18,7 @@ class NcrRegistration extends Model
         'product_identity_id','master_project_id','division_id','ui_code_id','vendor_name',
         'master_product_id','disposition_inspector_id','publish_date','completion_target',
         'incompatibility_category_id','person_in_charge','is_ver_inspector','is_ver_auditor',
-        'is_cancel','id_pic_respon','doc_reference_id','doc_reference', 'lat', 'long'
+        'is_cancel','id_pic_respon','doc_reference_id','doc_reference', 'lat', 'long', 'acuan_id', 'acuan_po'
     ];
 
     public function product_identity()

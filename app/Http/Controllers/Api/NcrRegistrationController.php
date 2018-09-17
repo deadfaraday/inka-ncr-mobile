@@ -93,7 +93,8 @@ class NcrRegistrationController extends Controller
     			'list_project' => $list_project,
     			'incompatibility_categories' => $categories,
     			'disposisi_inspector' => $inspectors,
-    			'doc_reference_division' => $docreferences
+    			'doc_reference_division' => $docreferences,
+                'ui_code' => $ui_code
     		], 200);
     	}
 
@@ -131,7 +132,6 @@ class NcrRegistrationController extends Controller
         $reference_unit = DocReferenceDivision::select('id','unit_id','doc_number_head')
         ->where('id', $request->acuan_id)->first();
         $new_division_id = $reference_unit->unit_id;
-        
         $doc_number_head = explode('-',$reference_unit->doc_number_head);
 
         if(count($doc_number_head)>1){

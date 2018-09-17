@@ -72,8 +72,8 @@ class NcrRegRequest extends FormRequest
                 //'default_pic' => 'exists:users,id'
                 'lat' => 'required',
                 'long' => 'required',
-                'acuan_id' => 'required',
-                'acuan_po' => 'required'
+                //'acuan_id' => 'required',
+                //'acuan_po' => 'required'
             ];
         }
 
